@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 
 // This bloc covers all the business logic needed for this simple application.
+// It is reuseable as it does not know or cares about any UI. It simply reacts to events and changes the state accordingly.
 enum CounterEvent { increment, decrement }
 
 class CounterBloc extends Bloc<CounterEvent, int> {
@@ -20,4 +21,12 @@ class CounterBloc extends Bloc<CounterEvent, int> {
         break;
     }
   }
+}
+
+void main() {
+  final counterBloc = CounterBloc();
+
+  counterBloc.listen(print);
+  counterBloc.add(CounterEvent.increment);
+  counterBloc.add(CounterEvent.decrement);
 }
