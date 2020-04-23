@@ -8,4 +8,4 @@ Stay tuned and let me know if you have any questions.
 
 ### Table of Content as of today
 
-⋅*Refactor the standard Flutter application to use a bloc.
+1. Refactor the standard Flutter application to use a bloc.
