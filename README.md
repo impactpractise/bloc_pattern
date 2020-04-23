@@ -6,3 +6,6 @@ We will start by simply adding a bloc to the sample flutter application. However
 
 Stay tuned and let me know if you have any questions.
 
+### Table of Content as of today
+
+⋅⋅* Refactor the standard Flutter application to use a bloc.
