@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'bloc/counter_bloc.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -26,11 +28,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  final counterBloc = CounterBloc();
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      counterBloc.add(CounterEvent.increment);
     });
   }
 
@@ -48,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '${counterBloc.counter}',
               style: Theme.of(context).textTheme.display1,
             ),
           ],
