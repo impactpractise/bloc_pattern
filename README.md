@@ -1,16 +1,8 @@
-# bloc_pattern
+# A repository to explore the bloc_pattern using the bloclibrary.dev
 
-A new Flutter project.
+This repository is exploring the bloc pattern to seprate presentation and business logic in our applications. 
 
-## Getting Started
+We will start by simply adding a bloc to the sample flutter application. However, further down the road we will do cover things like authorization, handling data and testing our application.
 
-This project is a starting point for a Flutter application.
+Stay tuned and let me know if you have any questions.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
